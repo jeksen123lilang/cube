@@ -1,0 +1,67 @@
+body {
+    padding-left: 30%;
+    padding-top: 5%;
+}
+
+.container {
+
+    width: 200px;
+    height: 200px;
+    position: relative;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+}
+
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* -webkit-transform-style: preserve-3d;
+    -webkit-animation: rotatecube 10s infinite;
+    -moz-transform-style: preserve-3d;
+    -moz-animation: rotatecube 10s infinite; */
+}
+
+.muka {
+    background: url("img/drawing_blue.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.blkng {
+    background-size: 100% 100%;
+    background-image: url(drawing_green.png);
+    background-repeat: no-repeat;
+}
+
+.kiri {
+    background: url("img/drawing_pink.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.kanan {
+    background: url("img/drawing_red.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.atas {
+    background: url("img/drawing_white.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.bawah {
+    background: url("img/drawing_yellow.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#kotak div {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    border: none;
+    line-height: 200px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
