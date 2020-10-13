@@ -65,3 +65,111 @@ body {
     font-size: 50px;
     font-weight: bold;
 }
+
+
+
+.container2 {
+  padding-top: 10%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+}
+
+#cube2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: rotatecube2 10s infinite;
+  -moz-transform-style: preserve-3d;
+  -moz-animation: rotatecube2 10s infinite;
+}
+
+#cube2 div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  border: none;
+  line-height: 200px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+@-webkit-keyframes rotatecube2 {
+  75% {
+    -webkit-transform: rotateX(180deg) rotateY(00deg) rotateZ(0deg);
+  }
+}
+
+@-moz-keyframes rotatecube2 {
+
+  75% {
+    -moz-transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.front2 {
+  background: url("drawing_pink.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.back2 {
+  background: url("drawing_green.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.right2 {
+  background: url("drawing_blue.png") no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.left2 {
+  background: url("drawing_white.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.top2 {
+  background: url("drawing_red.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.bottom2 {
+  background: url("drawing_yellow.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+#cube2 .front2 {
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+  -moz-transform: rotateY(0deg) translateZ(100px);
+}
+
+#cube2 .back2 {
+  -webkit-transform: rotateX(180deg) translateZ(100px);
+  -moz-transform: rotateX(180deg) translateZ(100px);
+}
+
+#cube2 .right2 {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube2 .left2 {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube2 .top2 {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube2 .bottom2 {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) translateZ(100px);
+}
